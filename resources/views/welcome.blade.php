@@ -20,7 +20,10 @@
             }
         </style>
 
+        <!-- Tailwind -->
         <link rel="stylesheet" href="{{asset ('css/app.css')}}">
+        <!-- Livewire -->
+        @livewireStyles
 
     </head>
     <body class="antialiased">
@@ -135,5 +138,11 @@
                 </div>
             </div>
         </div>
+        <!-- Livewire -->
+        @livewireScripts
+        <!-- WireUI -->
+        @wireUiScripts
+        <!-- AlpineJS -->
+        <script src="//unpkg.com/alpinejs" defer></script>
     </body>
 </html>
