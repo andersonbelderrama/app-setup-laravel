@@ -1,11 +1,15 @@
 module.exports = {
+    important: true,
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        fontFamily: {
+            roboto: ['Roboto', 'sans-serif'],
+        },
+        extend: {}
     },
     plugins: [
         require('@tailwindcss/typography'),
@@ -21,4 +25,4 @@ module.exports = {
         './vendor/wireui/wireui/ts/**/*.ts',
         './vendor/wireui/wireui/src/View/**/*.php'
     ],
-  }
+}
